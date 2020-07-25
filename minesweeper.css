@@ -1,0 +1,93 @@
+body{
+    text-align: center;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.smiley{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+h1{
+    font-family: 'Bungee Inline', cursive;
+    color: #4ea0ae;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: xxx-large;
+    font-weight: 200;
+}
+
+h2{
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-size: x-large;
+    display: none;
+}
+
+button{
+    margin: auto;
+    margin: 20px 20px;
+    background-color: #4ea0ae;
+    color: white;
+    border: solid;
+    border-radius: 5%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+table{
+    background-color: #4ea0ae;
+    border-collapse: separate;
+    margin: auto;
+    color: antiquewhite;
+    cursor: pointer;
+   
+}
+
+.cell {
+    height:30px;
+    width: 30px;
+    border: solid;
+    border-radius: 15%;
+    
+    
+}
+
+.board-div{
+    padding: 30px;
+    margin: 20px 50px;
+}
+
+.hints{
+    height: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.hint{
+    margin: auto 30px;
+    cursor: pointer; 
+    color: #FAD700;
+    font-size: xx-large;
+}
+
+label{
+    margin: 20px auto;
+    
+}
+
+#minutes, #seconds{
+font-size: x-large;
+    color: antiquewhite;
+}
+
+.restart-notification{
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+    display: none;
+}

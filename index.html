@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="minesweeper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body onload="initGame(4)" oncontextmenu="return false">
+    <div>
+        <audio id="soundV" src="victorysound.wav"></audio>
+        <h1>Mines Sweeper</h1>
+        <img class="smiley" onclick="restart()" src="smiley.gif" alt=""><br>
+        <h2>H2</h2><br>
+        <button onclick="initGame(4)" class="btn1">Warm-Up Level</button>
+        <button onclick="initGame(8)" class="btn2">Intermediate Level</button>
+        <button onclick="initGame(12)" class="btn3">Expert Level</button>
+    </div>
+    <div class="hints">
+        <span onclick="hintIsOn(this)" class="hint hint1">&#9728</span>
+        <span onclick="hintIsOn(this)" class="hint hint2">&#9728</span>
+        <span onclick="hintIsOn(this)" class="hint hint3">&#9728</span>
+    </div>
+    <label id="minutes">00</label>:<label id="seconds">00</label>
+    <div class="board-div">
+        <table class="main-board" border="1">
+
+            <tbody class="cells-board">
+
+            </tbody>
+        </table>
+        <div>
+            <h3 class="restart-notification">Touch Smiley to Restart</h3>
+        </div>
+    </div>
+    <script src="utils.js"></script>
+    <script src="mineSweeper.js"></script>
+</body>
+
+</html>
